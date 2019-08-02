@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+			"label": "One",
+			"type": "shell",
+			"command": "echo 1",
+			"problemMatcher": [],
+			"dependsOrder": "sequence",
+			"dependsOn":[
+				"Two",
+				"Three"
+			]
+		},
+		{
+			"label": "Two",
+			"type": "shell",
+			"command": "echo 2",
+			"problemMatcher": []
+		},
+		{
+			"label": "Three",
+			"type": "shell",
+			"command": "echo 3",
+			"problemMatcher": [],
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Four",
+				"Five"
+			]
+		},
+		{
+			"label": "Four",
+			"type": "shell",
+			"command": "echo 4",
+			"problemMatcher": []
+		},		
+		{
+			"label": "Five",
+			"type": "shell",
+			"command": "echo 5",
+			"problemMatcher": []
+		}
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "terminal.integrated.shell.linux": "${workspaceFolder}/shell.sh",
+    "terminal.integrated.shellArgs.linux": [
+        "${workspaceFolder}",
+        "${workspaceFolderBasename}",
+        "${cwd}",
+        "${lineNumber}",
+        "${selectedText}",
+        "${execPath}",
+        "${file}",
+        "${relativeFile}",
+        "${fileBasename}",
+        "${fileBasenameNoExtension}",
+        "${fileExtname}"
+    ]
+}
