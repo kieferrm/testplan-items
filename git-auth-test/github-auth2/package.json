@@ -1,6 +1,6 @@
 {
-	"name": "github-auth",
-	"displayName": "github-auth",
+	"name": "github-auth2",
+	"displayName": "github-auth2",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
@@ -10,25 +10,30 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:github-auth.showSessions",
-		"onCommand:github-auth.login",
-		"onCommand:github-auth.logout"
+		"onCommand:github-auth2.oauth-login",
+		"onCommand:github-auth2.oauth-sessions",
+		"onCommand:github-auth2.vso-login",
+		"onCommand:github-auth2.vso-sessions"
 	],
 	"enableProposedApi": true,
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "github-auth.showSessions",
-				"title": "GitHubAuth: Show Sessions"
+				"command": "github-auth2.oauth-sessions",
+				"title": "GitHubAuth-Test2: Show OAuth Sessions"
 			},
 			{
-				"command": "github-auth.login",
-				"title": "GitHubAuth: Login"
+				"command": "github-auth2.oauth-login",
+				"title": "GitHubAuth-Test2: Login with OAuth"
 			},
 			{
-				"command": "github-auth.logout",
-				"title": "GitHubAuth: Logout"
+				"command": "github-auth2.vso-login",
+				"title": "GitHubAuth-Test2: Login for VSO"
+			},
+			{
+				"command": "github-auth2.vso-sessions",
+				"title": "GitHubAuth-Test2: Show VSO Sessions"
 			}
 		]
 	},
