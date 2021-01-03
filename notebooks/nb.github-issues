@@ -1,0 +1,7 @@
+[
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "repo:microsoft/vscode assignee:@me is:open"
+  }
+]
